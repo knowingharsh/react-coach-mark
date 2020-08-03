@@ -1,0 +1,66 @@
+{
+  "name": "react-coach-mark",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "build",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hashlucifer/react-coach-mark.git"
+  },
+  "keywords": [
+    "coach-mark",
+    "splash-screen",
+    ""
+  ],
+  "author": {
+    "name": "Harsh Mehta"
+  },
+  "dependencies": {
+    "babel-plugin-import": "^1.13.0",
+    "cpx": "^1.5.0",
+    "cross-env": "^6.0.0",
+    "customize-cra": "^0.9.0",
+    "less": "^3.10.0",
+    "less-loader": "^5.0.0",
+    "react": "^16.12.0",
+    "react-app-rewired": "^2.1.0",
+    "react-docgen-typescript": "^1.16.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.0",
+    "react-scripts": "^3.4.0",
+    "typescript": "^3.7.0",
+    "uuid": "^7.0.2",
+    "validator": "^12.1.0"
+  },
+  "scripts": {
+    "start": "cross-env react-app-rewired start",
+    "build": "cross-env react-app-rewired build && cross-env node create-bundle.js",
+    "build-library": "cross-env tsc -p library-tsconfig.json && cross-env cpx 'src/lib/**/*.{png,jpg,svg,jpeg,less,scss,css}' dist",
+    "test": "cross-env react-app-rewired test"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-router-dom": "^5.1.0"
+  }
+}

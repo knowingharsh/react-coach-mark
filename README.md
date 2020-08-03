@@ -1,2 +1,1 @@
-# react-coach-mark
-react-coach-mark
+React Coach Mark, can be called as Intro screen or Splash screen
