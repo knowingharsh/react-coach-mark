@@ -32,12 +32,11 @@ const coach: ICoachProps = {
 ### Installation
 
 To clone
-`` `git clone https://github.com/hashlucifer/react-coach-mark.git` ``
+` `  ` git clone https://github.com/hashlucifer/react-coach-mark.git `  ` `
 To install
-`` `npm install` ``
+` `  ` npm install `  ` `
 To start
-`` `npm start` ``
-
+` `  ` npm start `  ` `
 I will soon publish git/npm repository for further use
 
 ### Integration code 
@@ -101,8 +100,8 @@ Step 4: Just pass the configuration to the coach mark
 
 ![Demo](./public/demo1.png)
 
-> Please note that : This works individually as well by calling it twice
+> Please note that : This works individually as well by calling it twice <CoachMark {...coach1} /> and <CoachMark {...coach2} /> but it might not give smooth css transition for one focus to another.
 
-`<CoachMark {...coach1} />` and `<CoachMark {...coach2} />` but it might not give smooth css transition for one focus to another.
+> You can override classes for your own css customization
 
-Please feel free to connect and  contribute. Happy Coding.
+Please feel free to connect and  contribute, Happy Coding.
