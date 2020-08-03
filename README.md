@@ -32,11 +32,23 @@ const coach: ICoachProps = {
 ### Installation
 
 To clone
-` `  ` git clone https://github.com/hashlucifer/react-coach-mark.git `  ` `
+
+``` dosini
+git clone https://github.com/hashlucifer/react-coach-mark.git 
+```
+
 To install
-` `  ` npm install `  ` `
+
+``` dosini
+npm install 
+```
+
 To start
-` `  ` npm start `  ` `
+
+``` dosini
+ npm start 
+ ```
+
 I will soon publish git/npm repository for further use
 
 ### Integration code 
