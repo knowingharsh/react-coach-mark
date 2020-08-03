@@ -23,7 +23,10 @@ const CoachMark: React.FC<ICoachProps> = (props) => {
         //eslint-disable-next-line
     }, [props.activate, props.reference?.current]);
 
-    if (!dimension || !props.activate) {
+    if (!dimension || !props.activate || !props.reference?.current) {
+        if ((dimension && props.activate) && !props.reference?.current) {
+            console.error('Ref is not passed properly @Coach-Mark');
+        }
         return null;
     }
 

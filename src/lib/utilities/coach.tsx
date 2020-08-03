@@ -32,7 +32,6 @@ export function toolTipPlacementCalculator({ dimension, position }: IToolTipPlac
 
 export function dimensionSetter({ reference, setDimension }: IDimensionSetter) {
     let rect = reference?.current?.getBoundingClientRect();
-    console.log(rect);
     if (!rect) return;
     setDimension({
         height: rect.height,

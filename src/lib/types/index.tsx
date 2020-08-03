@@ -1,14 +1,18 @@
 import { MutableRefObject, ReactNode } from "react";
 
-export type IPositionTypes = 'left' | 'top' | 'right' | 'bottom';
+export interface IPositionTypes {
+    position: 'left' | 'top' | 'right' | 'bottom'
+};
+
+export interface ITooltip extends IPositionTypes {
+    position: 'left' | 'top' | 'right' | 'bottom'
+};
 
 export interface ICoachProps {
     activate: boolean
     component: ReactNode,
     reference: MutableRefObject<null> | { current: any },
-    tooltip: {
-        position: IPositionTypes
-    }
+    tooltip: ITooltip
 }
 
 
@@ -30,7 +34,6 @@ export interface IDimensionSetter {
     setDimension: (dimension: IDimension) => void
 }
 
-export interface IToolTipPlacement {
-    dimension: IDimension,
-    position: IPositionTypes
+export interface IToolTipPlacement extends IPositionTypes {
+    dimension: IDimension
 };
