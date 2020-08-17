@@ -2,9 +2,10 @@
   "name": "react-coach-mark",
   "version": "1.0.0",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist",
-    "build",
+    "web",
     "README.md"
   ],
   "repository": {
@@ -13,8 +14,7 @@
   },
   "keywords": [
     "coach-mark",
-    "splash-screen",
-    ""
+    "splash-screen"
   ],
   "author": {
     "name": "Harsh Mehta"
@@ -24,7 +24,7 @@
     "cpx": "^1.5.0",
     "cross-env": "^6.0.0",
     "customize-cra": "^0.9.0",
-    "less": "^3.10.0",
+    "less": "^3.12.2",
     "less-loader": "^5.0.0",
     "react": "^16.12.0",
     "react-app-rewired": "^2.1.0",
@@ -38,8 +38,8 @@
   },
   "scripts": {
     "start": "cross-env react-app-rewired start",
-    "build": "cross-env react-app-rewired build && cross-env node create-bundle.js",
-    "build-library": "cross-env tsc -p library-tsconfig.json && cross-env cpx 'src/lib/**/*.{png,jpg,svg,jpeg,less,scss,css}' dist",
+    "build-web": "cross-env react-app-rewired build",
+    "build": "cross-env tsc -p library.tsconfig.json &&  cross-env cpx 'src/lib/**/*.{png,jpg,svg,jpeg,less,scss,css}' dist  && webpack --config library.webpack.config.js && lessc dist/styles/index.less dist/coachmark.css ",
     "test": "cross-env react-app-rewired test"
   },
   "eslintConfig": {
@@ -61,6 +61,8 @@
     "@types/jest": "^24.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
-    "@types/react-router-dom": "^5.1.0"
+    "@types/react-router-dom": "^5.1.0",
+    "ts-loader": "^8.0.2",
+    "webpack-cli": "^3.3.12"
   }
 }

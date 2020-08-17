@@ -30,8 +30,8 @@ export function toolTipPlacementCalculator({ dimension, position }: IToolTipPlac
 
 }
 
-export function dimensionSetter({ reference, setDimension }: IDimensionSetter) {
-    let rect = reference?.current?.getBoundingClientRect();
+export function dimensionSetter({ element, setDimension }: IDimensionSetter) {
+    let rect = element.getBoundingClientRect();
     if (!rect) return;
     setDimension({
         height: rect.height,

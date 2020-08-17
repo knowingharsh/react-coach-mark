@@ -5,13 +5,34 @@ export interface IPositionTypes {
 };
 
 export interface ITooltip extends IPositionTypes {
-    position: 'left' | 'top' | 'right' | 'bottom'
+};
+
+export interface ITooltip extends IPositionTypes {
 };
 
 export interface ICoachProps {
+    /*
+       activate : true | false
+   */
+    activate: boolean
+    /*
+        component can be react component
+    */
+    component: ReactNode,
+    /*
+        reference can be react ref or an object with current as element or valid css selector
+    */
+    reference: MutableRefObject<null> | string,
+    /*
+        default value of position be bottom
+    */
+    tooltip?: ITooltip
+}
+
+export interface ICoachCoreProps {
     activate: boolean
     component: ReactNode,
-    reference: MutableRefObject<null> | { current: any },
+    element: Element,
     tooltip: ITooltip
 }
 
@@ -30,7 +51,7 @@ export interface IDimension {
 }
 
 export interface IDimensionSetter {
-    reference: MutableRefObject<null> | { current: any },
+    element: Element,
     setDimension: (dimension: IDimension) => void
 }
 
