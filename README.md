@@ -16,6 +16,8 @@ A light weight coach mark library on react.
 ### Usage
 
 ``` jsx
+import { CoachMark, ICoachProps } from "react-coach-mark";
+
 const coach: ICoachProps = {
         activate: true,
         component: <div>Any Component You Want</div>,
@@ -31,25 +33,19 @@ const coach: ICoachProps = {
 
 ### Installation
 
-To clone
-
-``` dosini
-git clone https://github.com/hashlucifer/react-coach-mark.git 
-```
-
 To install
 
 ``` dosini
-npm install 
+npm i react-coach-mark
 ```
 
-To start
+To contribute or play-around with the project
 
 ``` dosini
- npm start 
- ```
-
-I will soon publish git/npm repository for further use
+git clone https://github.com/hashlucifer/react-coach-mark.git 
+npm install 
+npm start 
+```
 
 ### Integration code 
 
