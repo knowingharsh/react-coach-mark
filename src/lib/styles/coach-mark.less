@@ -1,10 +1,5 @@
-@black-transparent :#000000bf;
-@tooltip-move : 10px;
-@tooltip-height : 8px;
-@tooltip-shift : -(@tooltip-height+@tooltip-height);
-
 .harsh-coach-mark {
-    border: 1px solid @black-transparent;
+    border: 1px solid #000000bf;
     box-sizing: border-box;
     position: fixed;
     z-index: 9999998;
@@ -12,7 +7,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    box-shadow: 0px 0px 0px 2000px @black-transparent;
+    box-shadow: 0px 0px 0px 2000px #000000bf;
     border-radius: 10px;
     -webkit-transition: all .3s ease-out;
     -moz-transition: all .3s ease-out;
@@ -39,10 +34,10 @@
 
 .hcm-tooltip-base-direction {
     content: '';
-    border-top-width: @tooltip-height;
-    border-left-width: @tooltip-height;
-    border-right-width: @tooltip-height;
-    border-bottom-width: @tooltip-height;
+    border-top-width: 8px;
+    border-left-width: 8px;
+    border-right-width: 8px;
+    border-bottom-width: 8px;
     border-style: solid;
     background: transparent;
     border-color: #ffffffdb;
@@ -51,36 +46,72 @@
 
 
 .hcm-tooltip-base-left::before {
-    .hcm-tooltip-base-direction();
-    top: @tooltip-move;
-    right: @tooltip-shift;
+    content: '';
+    border-top-width: 8px;
+    border-left-width: 8px;
+    border-right-width: 8px;
+    border-bottom-width: 8px;
+    border-style: solid;
+    background: transparent;
+    border-color: #ffffffdb;
+    position: absolute;
+    
+    top: 10px;
+    right: 16px;
     border-top-color: transparent;
     border-bottom-color: transparent;
     border-right-color: transparent;
 }
 
 .hcm-tooltip-base-bottom::before {
-    .hcm-tooltip-base-direction();
-    top: @tooltip-shift;
-    left: @tooltip-move;
+    content: '';
+    border-top-width: 8px;
+    border-left-width: 8px;
+    border-right-width: 8px;
+    border-bottom-width: 8px;
+    border-style: solid;
+    background: transparent;
+    border-color: #ffffffdb;
+    position: absolute;
+    
+    top: 16px;
+    left: 10px;
     border-top-color: transparent;
     border-right-color: transparent;
     border-left-color: transparent;
 }
 
 .hcm-tooltip-base-top::before {
-    .hcm-tooltip-base-direction();
-    bottom: @tooltip-shift;
-    left: @tooltip-move;
+    content: '';
+    border-top-width: 8px;
+    border-left-width: 8px;
+    border-right-width: 8px;
+    border-bottom-width: 8px;
+    border-style: solid;
+    background: transparent;
+    border-color: #ffffffdb;
+    position: absolute;
+    
+    bottom: 16px;
+    left: 10px;
     border-bottom-color: transparent;
     border-right-color: transparent;
     border-left-color: transparent;
 }
 
 .hcm-tooltip-base-right::before {
-    .hcm-tooltip-base-direction();
-    left: @tooltip-shift;
-    top: @tooltip-move;
+    content: '';
+    border-top-width: 8px;
+    border-left-width: 8px;
+    border-right-width: 8px;
+    border-bottom-width: 8px;
+    border-style: solid;
+    background: transparent;
+    border-color: #ffffffdb;
+    position: absolute;
+    
+    left: 16px;
+    top: 10px;
     border-top-color: transparent;
     border-left-color: transparent;
     border-bottom-color: transparent;
