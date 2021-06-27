@@ -1,5 +1,5 @@
 import { CoachMarkContainer } from './containers';
-import './styles/index.less';
+import './styles/index.css';
 
 
 // function CoachMarkWeb(...args: any) {

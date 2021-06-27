@@ -1,6 +1,6 @@
 {
   "name": "react-coach-mark",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "licenses" : [
     {
       "type": "MIT",
@@ -46,7 +46,7 @@
   "scripts": {
     "start": "cross-env react-app-rewired start",
     "build-web": "cross-env react-app-rewired build",
-    "build": "cross-env tsc -p library.tsconfig.json &&  cross-env cpx 'src/lib/**/*.{png,jpg,svg,jpeg,less,scss,css}' dist  && webpack --config library.webpack.config.js && lessc dist/styles/index.less dist/coachmark.css ",
+    "build": "cross-env tsc -p library.tsconfig.json && cross-env cpx 'src/lib/**/*.{png,jpg,svg,jpeg,less,scss,css}' dist && webpack --config library.webpack.config.js",
     "test": "cross-env react-app-rewired test"
   },
   "eslintConfig": {
