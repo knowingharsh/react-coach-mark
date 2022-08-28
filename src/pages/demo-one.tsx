@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import { CoachMark, ICoachProps } from './../lib';
+import './../lib/styles/index.css';
 
 const DemoOne: React.FC = () => {
 
@@ -8,9 +9,13 @@ const DemoOne: React.FC = () => {
     const ref3 = useRef(null);
     const ref4 = useRef(null);
     const ref5 = useRef(null);
-
+    const [rerender, setRerender] = React.useState<number>(0);
     const [activatedNumber, setActivateNumber] = useState<number>(0);
     const NextButton = <button onClick={() => setActivateNumber(activatedNumber + 1)}>Next</button>;
+
+    React.useEffect(() => { /* needed so that ref gets updates value to be passed as prop */
+        setRerender(rerender + 1);
+    }, [ref1.current])
 
     const coachList: Array<ICoachProps> = [
         {
@@ -87,7 +92,7 @@ const DemoOne: React.FC = () => {
             <div className="footer">
                 <h2>Thanks for choosing</h2>
             </div>
-
+            {console.log(ref1,)}
             <CoachMark {...coach} />
         </>
     )
