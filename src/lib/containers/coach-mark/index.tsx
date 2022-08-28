@@ -10,11 +10,11 @@ const CoachMark: React.FC<ICoachProps> = (props) => {
             element = document.querySelector(props.reference) || null;
         } catch (e) { console.error(props.reference + 'is not valid in document.querySelector') }
     } else if (props.reference && props.reference.current) {
-        console.log('here')
+        // console.log('here')
         element = props.reference.current;
     }
-    console.log('here')
-    console.log(element, props);
+    // console.log('here')
+    // console.log(element, props, props?.reference);
     if (!element) {
         return null;
     }

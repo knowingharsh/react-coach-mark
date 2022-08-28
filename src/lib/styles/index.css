@@ -55,7 +55,7 @@
 
 .hcm-tooltip-base-left::before {
   top: var(--tooltip-move);
-  right: var(--tooltip-move);
+  right: var(--tooltip-shift);
   border-top-color: transparent;
   border-bottom-color: transparent;
   border-right-color: transparent;
@@ -70,7 +70,7 @@
 }
 
 .hcm-tooltip-base-top::before {
-  bottom: var(--tooltip-move);
+  bottom: var(--tooltip-shift);
   left: var(--tooltip-move);
   border-bottom-color: transparent;
   border-right-color: transparent;
@@ -78,7 +78,7 @@
 }
 
 .hcm-tooltip-base-right::before {
-  left: var(--tooltip-move);
+  left: var(--tooltip-shift);
   top: var(--tooltip-move);
   border-top-color: transparent;
   border-left-color: transparent;
