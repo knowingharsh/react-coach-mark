@@ -40,7 +40,7 @@
     "react-app-rewired": "^2.1.0",
     "react-docgen-typescript": "^1.16.0",
     "react-router-dom": "^5.1.0",
-    "react-scripts": "^3.4.0",
+    "react-scripts": "^5.0.1",
     "typescript": "^3.7.0",
     "uuid": "^7.0.2",
     "validator": "^12.1.0"
