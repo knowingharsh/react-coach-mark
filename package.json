@@ -1,7 +1,7 @@
 {
   "name": "react-coach-mark",
-  "version": "1.0.2",
-  "licenses" : [
+  "version": "1.0.3",
+  "licenses": [
     {
       "type": "MIT",
       "url": "https://www.opensource.org/licenses/mit-license.php"
@@ -46,6 +46,7 @@
     "validator": "^12.1.0"
   },
   "scripts": {
+    "dev": "vite",
     "start": "cross-env react-app-rewired start",
     "build-web": "cross-env react-app-rewired build",
     "build": "cross-env tsc -p library.tsconfig.json && cross-env cpx 'src/lib/**/*.{png,jpg,svg,jpeg,less,scss,css}' dist && webpack --config library.webpack.config.js",
@@ -71,9 +72,11 @@
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "@types/react-router-dom": "^5.1.0",
+    "@vitejs/plugin-react": "^2.2.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "ts-loader": "^8.0.2",
+    "vite": "^3.2.2",
     "webpack-cli": "^3.3.12"
   }
 }

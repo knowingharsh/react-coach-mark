@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import IndexPage from "./pages";
-import "./styles/index.less";
+import Routes from "./pages/Routes";
+import "./styles/index.css";
 
 const target = document.getElementById("root");
 
-ReactDOM.render(<IndexPage />, target);
+ReactDOM.render(<Routes />, target);

@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
-import { CoachMark, ICoachProps } from './../lib';
+import { CoachMark, ICoachProps } from '../lib';
 import './../lib/styles/index.css';
 
-const DemoOne: React.FC = () => {
+const DemoOnePage: React.FC = () => {
 
     const ref1 = useRef(null);
     const ref2 = useRef(null);
@@ -15,6 +15,7 @@ const DemoOne: React.FC = () => {
 
     React.useEffect(() => { /* needed so that ref gets updates value to be passed as prop */
         setRerender(rerender + 1);
+        console.log(rerender)
     }, [ref1.current])
 
     const coachList: Array<ICoachProps> = [
@@ -98,4 +99,4 @@ const DemoOne: React.FC = () => {
     )
 }
 
-export default DemoOne;
+export default DemoOnePage;
