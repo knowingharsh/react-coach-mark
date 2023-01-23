@@ -1,12 +1,7 @@
 {
   "name": "react-coach-mark",
   "version": "1.0.4",
-  "licenses" : [
-    {
-      "type": "MIT",
-      "url": "https://www.opensource.org/licenses/mit-license.php"
-    }
-  ],
+  "license" : "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
